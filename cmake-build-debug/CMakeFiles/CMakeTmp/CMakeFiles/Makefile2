@@ -19,6 +19,9 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
+# Produce verbose output by default.
+VERBOSE = 1
+
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -43,21 +46,21 @@ RM = "C:\Program Files\JetBrains\CLion 2019.3.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\COnline
+CMAKE_SOURCE_DIR = C:\Users\kcbav\Desktop\SummerCppTutoring\cmake-build-debug\CMakeFiles\CMakeTmp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\COnline\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\kcbav\Desktop\SummerCppTutoring\cmake-build-debug\CMakeFiles\CMakeTmp
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/COnline.dir/all
+all: CMakeFiles/cmTC_a122c.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
-clean: CMakeFiles/COnline.dir/clean
+clean: CMakeFiles/cmTC_a122c.dir/clean
 
 .PHONY : clean
 
@@ -67,39 +70,32 @@ preinstall:
 .PHONY : preinstall
 
 #=============================================================================
-# Target rules for target CMakeFiles/COnline.dir
+# Target rules for target CMakeFiles/cmTC_a122c.dir
 
 # All Build rule for target.
-CMakeFiles/COnline.dir/all:
-	$(MAKE) -f CMakeFiles\COnline.dir\build.make CMakeFiles/COnline.dir/depend
-	$(MAKE) -f CMakeFiles\COnline.dir\build.make CMakeFiles/COnline.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\COnline\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target COnline"
-.PHONY : CMakeFiles/COnline.dir/all
+CMakeFiles/cmTC_a122c.dir/all:
+	$(MAKE) -f CMakeFiles\cmTC_a122c.dir\build.make CMakeFiles/cmTC_a122c.dir/depend
+	$(MAKE) -f CMakeFiles\cmTC_a122c.dir\build.make CMakeFiles/cmTC_a122c.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\kcbav\Desktop\SummerCppTutoring\cmake-build-debug\CMakeFiles\CMakeTmp\CMakeFiles --progress-num=1,2 "Built target cmTC_a122c"
+.PHONY : CMakeFiles/cmTC_a122c.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/COnline.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\COnline\cmake-build-debug\CMakeFiles 2
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/COnline.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\COnline\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/COnline.dir/rule
+CMakeFiles/cmTC_a122c.dir/rule:
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\kcbav\Desktop\SummerCppTutoring\cmake-build-debug\CMakeFiles\CMakeTmp\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/cmTC_a122c.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\kcbav\Desktop\SummerCppTutoring\cmake-build-debug\CMakeFiles\CMakeTmp\CMakeFiles 0
+.PHONY : CMakeFiles/cmTC_a122c.dir/rule
 
 # Convenience name for target.
-COnline: CMakeFiles/COnline.dir/rule
+cmTC_a122c: CMakeFiles/cmTC_a122c.dir/rule
 
-.PHONY : COnline
+.PHONY : cmTC_a122c
 
 # clean rule for target.
-CMakeFiles/COnline.dir/clean:
-	$(MAKE) -f CMakeFiles\COnline.dir\build.make CMakeFiles/COnline.dir/clean
-.PHONY : CMakeFiles/COnline.dir/clean
+CMakeFiles/cmTC_a122c.dir/clean:
+	$(MAKE) -f CMakeFiles\cmTC_a122c.dir\build.make CMakeFiles/cmTC_a122c.dir/clean
+.PHONY : CMakeFiles/cmTC_a122c.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
-
-# Special rule to run CMake to check the build system integrity.
-# No rule that depends on this can have commands that come from listfiles
-# because they might be regenerated.
-cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
-.PHONY : cmake_check_build_system
 
